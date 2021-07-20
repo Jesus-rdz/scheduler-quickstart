@@ -19,7 +19,7 @@ public class CounterBean {
         counter.incrementAndGet(); 
     }
 
-    @Scheduled(cron="0 39 17 * * ?") 
+    @Scheduled(cron="0 34 13 * * ?") 
     void cronJob(ScheduledExecution execution) {
         counter.incrementAndGet();
         System.out.println(execution.getScheduledFireTime());
